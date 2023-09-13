@@ -1,0 +1,27 @@
+nav {
+  position: absolute; /* Add position relative to stack it above the pseudo-element */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  align-self: center;
+  padding: 1rem;
+  width: 70%;
+  z-index: 2;
+  margin-left: 10%;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  margin-right: 5rem;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.signin {
+  color: gray;
+  font-size: 1.2rem;
+  width: 9.75rem;
+  white-space: nowrap;
+}

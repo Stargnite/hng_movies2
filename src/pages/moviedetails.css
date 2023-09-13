@@ -1,0 +1,88 @@
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gray;
+  position: absolute;
+  height: 100vh;
+  width: 12rem;
+  align-items: center;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.sideNav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  color: #3d3c3c;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.sideNav ul li {
+  padding: 1.7rem 0;
+  font-weight: bolder;
+}
+
+
+
+.mainDetails {
+  position: absolute;
+  top: 0;
+  left: 230px;
+  margin: 2rem;
+}
+
+.movieVid {
+	background: gray;
+	width: 100%;
+	height: 20rem;
+	border-radius: 1rem;
+	margin-bottom: 1.5rem;
+	object-fit: cover;
+}
+
+.movieheading {
+	display: flex;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #474546;
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
+
+.point {
+	border-radius: 100%;
+	width: 5px;
+	height: 5px;
+	background: #000;
+	align-self: center;
+	margin: 0 .5rem;
+	color: gray;
+}
+
+.runtime {
+	margin-right: 1rem;
+}
+
+
+
+.genre {
+	font-size: 12px;
+	align-items: center;
+	color: rgb(190,18,60);
+	margin: 3px;
+}
+
+.genre span {
+	border: 1px solid #FC97B1;
+	border-radius: 20px;
+	padding: 2px 5px;
+	margin: 10px 5px;
+}
+
+
+.movieOverview p {
+	width: 40rem;
+}

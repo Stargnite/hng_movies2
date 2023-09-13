@@ -1,0 +1,11 @@
+.searchbox {
+	border: 2px solid gray;
+	border-radius: .5rem;
+	width: 30rem;
+	padding: .5rem;
+	margin: 0;
+	background: none;
+	color: white;
+	font-size: larger;
+	margin-right: 5rem;
+}
