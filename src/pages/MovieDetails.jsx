@@ -21,8 +21,8 @@ const MovieDetails = () => {
       })
       .catch(function (error) {
         console.log(error);
-        // alert(`Error fetching data: ${error.message}`);
         setIsLoading(false);
+        alert(`Error fetching data: ${error.message}`);
       });
   }, [movieId]);
 

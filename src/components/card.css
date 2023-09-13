@@ -1,4 +1,10 @@
 /* Basic card styling */
+.whole-card {
+  /* position: relative;
+  margin: 0;
+  padding: 0; */
+}
+
 .card {
   background-color: #ffffff;
   border-radius: 5px;
@@ -8,7 +14,21 @@
   /* width: auto; */
   margin: 1rem;
   padding: 0;
+  position: relative;
+
 }
+
+.favorite {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: gray;
+  width: 2rem;
+  height: 2rem;
+  /* z-index: 100; */
+  /* cursor: pointer; */
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -28,7 +48,7 @@
 }
 
 .card-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #333333;
 }
 

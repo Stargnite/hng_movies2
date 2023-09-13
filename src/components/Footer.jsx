@@ -1,9 +1,13 @@
 import './footer.css'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="social-icons"></div>
+      <div className="social-icons">
+      {/* <FontAwesomeIcon icon="fa-twitter" /> */}
+      </div>
       <div className="links">
         <p>Conditions of use</p>
         <p>Privacy & policy</p>

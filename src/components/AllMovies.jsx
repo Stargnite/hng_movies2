@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import "./topmovies.css";
-// import movieImage from "./../../public/wallpaper.jpg";
 import ImdbCard from "./../../public/imdb-card.svg";
 import LoadingSpinner from "./LoadingSpinner";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 
 const AllMovies = () => {
   const [movies, setMovies] = useState([]);
@@ -53,8 +54,12 @@ const AllMovies = () => {
       <div className="topMovies">
         {movies.map((movie) => {
           return (
-            <Link to={`/movies/${movie.id}`} key={movie.id}>
-              <Card data-testid="movie-card">
+            <Card data-testid="movie-card">
+              <FontAwesomeIcon
+                icon={regularHeart}
+                className="favorite"
+              />
+              <Link to={`/movies/${movie.id}`} key={movie.id}>
                 <img
                   data-testid="movie-poster"
                   src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
@@ -69,8 +74,8 @@ const AllMovies = () => {
                     {movie.release_date}
                   </p>
                 </div>
-              </Card>
-            </Link>
+              </Link>
+            </Card>
           );
         })}
       </div>

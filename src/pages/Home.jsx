@@ -33,6 +33,7 @@ const Home = () => {
     if (!response.ok) {
       setIsLoading(false);
       alert("Error fetching data");
+      console.log(Error);
       throw new Error("Something went wrong");
     }
 
@@ -46,13 +47,13 @@ const Home = () => {
     getMovies();
   }, []);
 
-  if (isLoading) {
-    return (
-      <div className="centered">
-        <LoadingSpinner />
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div className="centered">
+  //       <LoadingSpinner />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
@@ -82,7 +83,13 @@ const Home = () => {
           <p>See more movies </p>
         </Link>
       </div>
-      <TopMovies moviesArray={movies} isLoading={isLoading} />
+      {isLoading ? (
+        <div className="centered">
+          <LoadingSpinner />
+        </div>
+      ) : (
+        <TopMovies moviesArray={movies} isLoading={isLoading} />
+      )}
       <Footer />
     </div>
   );
